@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Hover</title>
+    <style>
+        /*seletores Personalizados
+        # = id
+        . = class
+        : = pseudo-class
+        :: = pseudo-elemento
+        > = children*/
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    div > p{
+        display: none;
+        color: white;
+        background-color: red;
+
+    }
+    div:hover > p{
+        display: block;
+    }
+    div:hover{
+        color: red;
+    }
+    a::after{
+        content: '[link]';
+        text-decoration: none;
+        font-weight: normal;
+        color: darkgray;
+    }
+        
+    </style>
+</head>
+<body>
+    <h1>Exemplo de hover</h1>
+    <p>Passe o mouse sobre o texto a baixo</p>
+    <div>
+        Passe o mouse aqui
+        <p>TEXTO ESCONDIDO</p>
+    </div>
+    <p>Fima do exemplo</p>
+    
+</body>
+</html>
